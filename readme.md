@@ -16,3 +16,9 @@ Tests are included using the `doctest` syntax. They can be run using:
 ```
 python3 -m doctest pathstats.py
 ```
+
+You can also run tests from the included `makefile` by running:
+
+```
+make
+```
