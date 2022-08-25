@@ -30,6 +30,8 @@ def get_max_bandwidth(path):
 
     >>> get_max_bandwidth(home)
     50
+
+    Note: This function can be implemented in as few as 43 characters
     """
 
     return 0
@@ -46,6 +48,8 @@ def get_min_latency(path):
 
     >>> get_min_latency(home)
     30.0
+
+    Note: This function can be implemented in as few as 41 characters
     """
 
     return 0
@@ -60,6 +64,8 @@ def get_bandwidth_bottleneck(path):
     
     >>> get_bandwidth_bottleneck(home)
     'Cable Modem'
+
+    Note: This function can be implemented in as few as 52 characters
     """
 
     return ""
