@@ -22,17 +22,17 @@ home = [
 ]
 
 
-def get_max_bandwidth(path: List[Device]) -> int:
+def get_path_bandwidth(path: List[Device]) -> int:
     """
-    Returns the maximum bandwidth for a given `path`.
+    Returns the maximum usable bandwidth for a given `path`.
 
     A path can only deliver as much bandwidth as the lowest bandwidth link,
     so this effectively returns the Device with the lowest bandwidth
 
-    >>> get_max_bandwidth(corporate)
+    >>> get_path_bandwidth(corporate)
     450
 
-    >>> get_max_bandwidth(home)
+    >>> get_path_bandwidth(home)
     50
 
     Note: This function can be implemented in as few as 43 characters
@@ -41,17 +41,17 @@ def get_max_bandwidth(path: List[Device]) -> int:
     return 0
 
 
-def get_min_latency(path: List[Device]) -> int:
+def get_path_latency(path: List[Device]) -> int:
     """
     Returns the minimum latency for a given `path`.
 
     In order to calculate the path minimum latency, we must sum the
     latencies along the path.
 
-    >>> get_min_latency(corporate)
+    >>> get_path_latency(corporate)
     13.0
 
-    >>> get_min_latency(home)
+    >>> get_path_latency(home)
     30.0
 
     Note: This function can be implemented in as few as 41 characters
