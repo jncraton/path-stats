@@ -26,7 +26,7 @@ make
 Assumed Knowledge
 -----------------
 
-It is assumed that you are already familiar with, or can easily teach yourself the following in order to complete this assignment:
+It is assumed that you are already familiar with, or can easily teach yourself, the following in order to complete this assignment:
 
 
 - [`for` loops](https://www.py4e.com/html3/05-iterations#definite-loops-using-for)
