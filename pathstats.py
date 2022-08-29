@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import List
 
 
 @dataclass
@@ -21,7 +22,7 @@ home = [
 ]
 
 
-def get_max_bandwidth(path):
+def get_max_bandwidth(path: List[Device]) -> int:
     """
     Returns the maximum bandwidth for a given `path`.
 
@@ -40,7 +41,7 @@ def get_max_bandwidth(path):
     return 0
 
 
-def get_min_latency(path):
+def get_min_latency(path: List[Device]) -> int:
     """
     Returns the minimum latency for a given `path`.
 
@@ -59,7 +60,7 @@ def get_min_latency(path):
     return 0
 
 
-def get_bandwidth_bottleneck(path):
+def get_bandwidth_bottleneck(path: List[Device]) -> str:
     """
     Returns the name of the device that limits the path bandwidth. This is
     the device on the path with the lowest bandwidth.
